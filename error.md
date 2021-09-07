@@ -1,3 +1,7 @@
+# tl;dr
+
+If you get this error, make sure you are using `<script lang="ts">` rather than `<script lang="typescript">`. It seems that using `typescript` will cause a build error (since uncompiled typescript get sent to esbuild), whereas using `ts` causes the proper behaviour. An arbitrary string (not `ts` or `typescript`) will cause a 500 in the browser.
+
 # Error
 
 See commit history of this repo for changes.
